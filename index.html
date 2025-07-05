@@ -64,7 +64,6 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Top Navigation -->
     <nav class="bg-white shadow-sm fixed top-0 left-0 right-0 z-10">
         <div class="px-4 py-3 flex items-center justify-between">
             <div class="flex items-center">
@@ -99,7 +98,6 @@
         </div>
     </nav>
 
-    <!-- Sidebar -->
     <div id="sidebar" class="sidebar sidebar-expanded bg-indigo-800 text-white fixed top-0 left-0 h-full pt-16 z-10">
         <div class="overflow-y-auto h-full pb-20">
             <div class="px-4 py-4">
@@ -189,10 +187,8 @@
         </div>
     </div>
 
-    <!-- Main Content -->
     <div id="mainContent" class="main-content pt-16 ml-64 transition-all duration-300">
         <div class="p-6">
-            <!-- Dashboard Section -->
             <section id="dashboardSection" class="mb-8">
                 <div class="flex justify-between items-center mb-6">
                     <h2 class="text-2xl font-bold text-gray-800">Dashboard Overview</h2>
@@ -208,7 +204,6 @@
                     </div>
                 </div>
 
-                <!-- KPI Cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                     <div class="bg-white rounded-lg shadow p-6">
                         <div class="flex justify-between items-start">
@@ -260,7 +255,6 @@
                     </div>
                 </div>
 
-                <!-- Charts Row -->
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                     <div class="bg-white rounded-lg shadow p-6 lg:col-span-2">
                         <h3 class="text-lg font-semibold mb-4">Sales Trend</h3>
@@ -276,7 +270,6 @@
                     </div>
                 </div>
 
-                <!-- Recent Activity -->
                 <div class="bg-white rounded-lg shadow overflow-hidden mb-8">
                     <div class="px-6 py-4 border-b border-gray-200">
                         <h3 class="text-lg font-semibold">Recent Activity</h3>
@@ -316,7 +309,6 @@
                 </div>
             </section>
 
-            <!-- POS Section -->
             <section id="posSection" class="mb-8 hidden">
                 <div class="flex justify-between items-center mb-6">
                     <h2 class="text-2xl font-bold text-gray-800">Point of Sale</h2>
@@ -330,47 +322,39 @@
                     </div>
                 </div>
 
-                <!-- Floor Plan -->
                 <div class="bg-white rounded-lg shadow p-6 mb-6">
                     <h3 class="text-lg font-semibold mb-4">Floor Plan</h3>
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                        <!-- Table 1 -->
                         <div class="table-status-open border-2 rounded-lg p-4 text-center cursor-pointer hover:shadow-md transition">
                             <div class="font-bold">Table 1</div>
                             <div class="text-sm text-gray-500 mt-1">Open</div>
                             <div class="text-xs mt-2">Capacity: 4</div>
                         </div>
-                        <!-- Table 2 -->
                         <div class="table-status-seated border-2 rounded-lg p-4 text-center cursor-pointer hover:shadow-md transition">
                             <div class="font-bold">Table 2</div>
                             <div class="text-sm text-gray-500 mt-1">Seated</div>
                             <div class="text-xs mt-2">Capacity: 2</div>
                         </div>
-                        <!-- Table 3 -->
                         <div class="table-status-order-taken border-2 rounded-lg p-4 text-center cursor-pointer hover:shadow-md transition">
                             <div class="font-bold">Table 3</div>
                             <div class="text-sm text-gray-500 mt-1">Order Taken</div>
                             <div class="text-xs mt-2">Capacity: 6</div>
                         </div>
-                        <!-- Table 4 -->
                         <div class="table-status-food-served border-2 rounded-lg p-4 text-center cursor-pointer hover:shadow-md transition">
                             <div class="font-bold">Table 4</div>
                             <div class="text-sm text-gray-500 mt-1">Food Served</div>
                             <div class="text-xs mt-2">Capacity: 4</div>
                         </div>
-                        <!-- Table 5 -->
                         <div class="table-status-bill-printed border-2 rounded-lg p-4 text-center cursor-pointer hover:shadow-md transition">
                             <div class="font-bold">Table 5</div>
                             <div class="text-sm text-gray-500 mt-1">Bill Printed</div>
                             <div class="text-xs mt-2">Capacity: 2</div>
                         </div>
-                        <!-- Table 6 -->
                         <div class="table-status-needs-cleaning border-2 rounded-lg p-4 text-center cursor-pointer hover:shadow-md transition">
                             <div class="font-bold">Table 6</div>
                             <div class="text-sm text-gray-500 mt-1">Needs Cleaning</div>
                             <div class="text-xs mt-2">Capacity: 4</div>
                         </div>
-                        <!-- Table 7 -->
                         <div class="table-status-reserved border-2 rounded-lg p-4 text-center cursor-pointer hover:shadow-md transition">
                             <div class="font-bold">Table 7</div>
                             <div class="text-sm text-gray-500 mt-1">Reserved</div>
@@ -379,7 +363,6 @@
                     </div>
                 </div>
 
-                <!-- Sales List -->
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
                         <h3 class="text-lg font-semibold">Today's Sales</h3>
@@ -446,7 +429,6 @@
                 </div>
             </section>
 
-            <!-- Attendance Station Section -->
             <section id="attendanceSection" class="mb-8 hidden">
                 <div class="flex justify-between items-center mb-6">
                     <h2 class="text-2xl font-bold text-gray-800">Attendance Station</h2>
@@ -458,7 +440,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <!-- QR Code Generator -->
                     <div class="bg-white rounded-lg shadow p-6">
                         <h3 class="text-lg font-semibold mb-4">Your QR Code</h3>
                         <div class="flex flex-col items-center">
@@ -472,7 +453,6 @@
                         </div>
                     </div>
 
-                    <!-- QR Scanner -->
                     <div class="bg-white rounded-lg shadow p-6 lg:col-span-2">
                         <h3 class="text-lg font-semibold mb-4">Scan QR Code</h3>
                         <div class="flex flex-col md:flex-row gap-6">
@@ -520,7 +500,6 @@
                     </div>
                 </div>
 
-                <!-- Staff List -->
                 <div class="bg-white rounded-lg shadow overflow-hidden mt-6">
                     <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
                         <h3 class="text-lg font-semibold">Staff List</h3>
@@ -587,7 +566,6 @@
                 </div>
             </section>
 
-            <!-- Admin Panel Section -->
             <section id="adminSection" class="mb-8 hidden">
                 <div class="flex justify-between items-center mb-6">
                     <h2 class="text-2xl font-bold text-gray-800">Admin Panel</h2>
@@ -598,7 +576,6 @@
                     </div>
                 </div>
 
-                <!-- Shop Requests -->
                 <div class="bg-white rounded-lg shadow overflow-hidden mb-8">
                     <div class="px-6 py-4 border-b border-gray-200">
                         <h3 class="text-lg font-semibold">Shop Requests</h3>
@@ -640,7 +617,6 @@
                     </div>
                 </div>
 
-                <!-- User Management -->
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="px-6 py-4 border-b border-gray-200">
                         <h3 class="text-lg font-semibold">User Management</h3>
@@ -707,7 +683,6 @@
         </div>
     </div>
 
-    <!-- Login Modal -->
     <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
             <div class="p-6">
@@ -744,7 +719,6 @@
         </div>
     </div>
 
-    <!-- Shop Setup Modal -->
     <div id="shopSetupModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
         <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl">
             <div class="p-6">
@@ -760,7 +734,6 @@
                     <div class="mb-6">
                         <h4 class="text-lg font-medium text-gray-800 mb-3">Request Staff Accounts</h4>
                         <div class="space-y-4">
-                            <!-- Management -->
                             <div class="flex items-start">
                                 <div class="flex-1 mr-4">
                                     <label class="block text-sm font-medium text-gray-700 mb-1">Management (1 required)</label>
@@ -772,7 +745,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Front Desk -->
                             <div class="flex items-start">
                                 <div class="flex-1 mr-4">
                                     <label class="block text-sm font-medium text-gray-700 mb-1">Front Desk (1 required)</label>
@@ -784,7 +756,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Staff -->
                             <div class="flex items-start">
                                 <div class="flex-1 mr-4">
                                     <label class="block text-sm font-medium text-gray-700 mb-1">Staff (Optional)</label>
@@ -872,14 +843,78 @@
             }
         });
 
-        // Simulate shop setup submission
+        // NEW: Replace the old shop setup form event listener with this one
         document.querySelector('#shopSetupModal form').addEventListener('submit', (e) => {
-            e.preventDefault();
+            e.preventDefault(); // Prevent the form from reloading the page
+
+            // 1. Get all the values from the form fields
             const shopName = document.getElementById('shopNameInput').value;
-            if (shopName) {
-                shopSetupModal.classList.add('hidden');
-                document.getElementById('shopName').textContent = shopName;
-            }
+
+            // Get all the requested staff accounts
+            const staffAccounts = [];
+            const accountSections = document.querySelectorAll('#shopSetupModal .space-y-4 > div');
+
+            accountSections.forEach(section => {
+                const emailInput = section.querySelector('input[type="email"]');
+                const passwordInput = section.querySelector('input[type="password"]');
+                const label = section.querySelector('label').textContent;
+                let position = 'Staff'; // Default position
+
+                if (label.includes('Management')) {
+                    position = 'Management';
+                } else if (label.includes('Front Desk')) {
+                    position = 'Front Desk';
+                }
+                
+                // Only add the account if an email is provided
+                if (emailInput && emailInput.value) {
+                    staffAccounts.push({
+                        name: 'Not Set', // You might add a name field later
+                        position: position,
+                        email: emailInput.value,
+                        password: passwordInput.value, // In a real app, never send plain passwords!
+                    });
+                }
+            });
+
+            // 2. Prepare the data object to be sent
+            const shopData = {
+                shopName: shopName,
+                requestedAccounts: staffAccounts
+            };
+
+            console.log("Data to be sent to the server:", shopData);
+            alert("Check the console (F12) to see the data that would be sent to a server!");
+
+            // 3. THIS IS WHERE YOU WOULD SEND DATA TO YOUR BACK-END
+            // In a real application, you would use 'fetch' to send this `shopData`
+            // object to your server's API endpoint.
+            //
+            // Example of what it would look like:
+            //
+            // fetch('https://your-api-url.com/shops', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify(shopData),
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     console.log('Success:', data);
+            //     shopSetupModal.classList.add('hidden'); // Hide the modal on success
+            //     document.getElementById('shopName').textContent = shopName;
+            // })
+            // .catch((error) => {
+            //     console.error('Error:', error);
+            //     alert('There was an error submitting your shop.');
+            // });
+
+
+            // For now, since we have no back-end, we will just hide the modal
+            // and update the shop name on the front-end for demonstration.
+            shopSetupModal.classList.add('hidden');
+            document.getElementById('shopName').textContent = shopName;
         });
 
         // Update QR time (for demo)
